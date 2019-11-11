@@ -51,38 +51,24 @@ h3 {
 }
 
 .baku {
-  /* display: block; */
   background-image: url('../images/baku.jpg');
-  /* background-size: cover;
-  height: 300px;
-  margin-bottom: 30px; */
 }
 
 .london {
-  /* display: block; */
   background-image: url('../images/london.png');
-  /* background-size: cover;
-  height: 300px;
-  margin-bottom: 30px; */
 }
 
 .madrid {
-  /* display: block; */
   background-image: url('../images/madrid.jpg');
-  /* background-size: cover;
-  height: 300px;
-  margin-bottom: 30px; */
 }
 
 .rome {
-  /* display: block; */
   background-image: url('../images/rome.jpg');
-  /* background-size: cover;
-  height: 300px;
-  margin-bottom: 30px; */
 }
 
-/* @media (min-width: 575px) {
+
+/* playing around with media */
+@media (min-width: 575px) {
 
   .preview {
     float: left;
@@ -94,4 +80,4 @@ h3 {
   .container {
     width: 100%;
   }
-} */
+}
