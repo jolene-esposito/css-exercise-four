@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: #FBFBFB;
+  background-color: #DEDEDE;
   font-size: 16px;
 }
 
@@ -12,8 +12,10 @@ body {
   margin-right: auto;
   margin-top: 25px;
   margin-bottom: 25px;
-  background-color: #DEDEDE;
   width: 420px;
+  display: inline-block;
+  align-items: center;
+
 }
 
 /* Header h1 styling */
@@ -24,12 +26,13 @@ h1 {
   padding: 25px;
   text-transform: uppercase;
   text-align: center;
-  /* background-color: red; */
+  background-color: red;
 }
 
 /* div {
   width: 100%;
 } */
+
 
 /* h3 styling */
 h3 {
@@ -40,34 +43,55 @@ h3 {
   background-color: yellow;
 }
 
-.baku {
-  display: block;
-  background-image: url('../images/baku.jpg');
+.preview {
   background-size: cover;
   height: 300px;
+  /* width: 420px; */
   margin-bottom: 30px;
+}
+
+.baku {
+  /* display: block; */
+  background-image: url('../images/baku.jpg');
+  /* background-size: cover;
+  height: 300px;
+  margin-bottom: 30px; */
 }
 
 .london {
-  display: block;
+  /* display: block; */
   background-image: url('../images/london.png');
-  background-size: cover;
+  /* background-size: cover;
   height: 300px;
-  margin-bottom: 30px;
+  margin-bottom: 30px; */
 }
 
 .madrid {
-  display: block;
+  /* display: block; */
   background-image: url('../images/madrid.jpg');
-  background-size: cover;
+  /* background-size: cover;
   height: 300px;
-  margin-bottom: 30px;
+  margin-bottom: 30px; */
 }
 
 .rome {
-  display: block;
+  /* display: block; */
   background-image: url('../images/rome.jpg');
-  background-size: cover;
+  /* background-size: cover;
   height: 300px;
-  margin-bottom: 30px;
+  margin-bottom: 30px; */
 }
+
+/* @media (min-width: 575px) {
+
+  .preview {
+    float: left;
+    height: 300px;
+    width: 320px;
+    margin: 5px;
+    }
+
+  .container {
+    width: 100%;
+  }
+} */
