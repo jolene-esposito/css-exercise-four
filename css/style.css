@@ -13,9 +13,7 @@ body {
   margin-top: 25px;
   margin-bottom: 25px;
   width: 420px;
-  display: inline-block;
-  align-items: center;
-
+  /* display: inline-block; */  /*applying inline-block to a block-level element changes its value to allow other elements to sit on the same row but since there is only one container then there is no reason to apply that value here. You need it on .preview because divs are block-level elements and you want them to be able to sit on the same row at different screen sizes.*/
 }
 
 /* Header h1 styling */
@@ -26,28 +24,21 @@ h1 {
   padding: 25px;
   text-transform: uppercase;
   text-align: center;
-  background-color: red;
 }
-
-/* div {
-  width: 100%;
-} */
-
 
 /* h3 styling */
 h3 {
   font-family: serif;
-  font-size: 1.3em;
-  padding: 20px;
-  display: inline-block;
-  background-color: yellow;
+  font-size: 1.4em;
+  padding: 25px;
 }
 
 .preview {
   background-size: cover;
   height: 300px;
-  /* width: 420px; */
+  width: 100%; /* width will be 420px */
   margin-bottom: 30px;
+  display: inline-block;
 }
 
 .baku {
@@ -67,14 +58,27 @@ h3 {
 }
 
 
-/* playing around with media */
-@media (min-width: 575px) {
+/* Screens 575px and larger */
+@media screen and (min-width: 575px) {
 
   .preview {
-    float: left;
-    height: 300px;
-    width: 320px;
-    margin: 5px;
+    height: 300px; /* should be static number */
+    width: 45%; /* needs to be flexible  */
+    margin: 10px;
+    }
+
+  .container {
+    width: 100%;
+  }
+}
+
+/* Screens 990px and larger */
+@media screen and (min-width: 990px) {
+
+  .preview {
+    height: 300px; /* should be static number */
+    width: 23%; /* needs to be flexible  */
+    margin: 10px;
     }
 
   .container {
